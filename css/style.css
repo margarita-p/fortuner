@@ -959,7 +959,7 @@ button
     padding-bottom: 20px; 
 
     color: #fff;
-    background-image: url('../img/h1-bg.png');
+    background-image: url('../assets/images/h1-bg.png');
     background-repeat: round;
     background-position: left center;
     background-clip: padding-box;
@@ -987,7 +987,7 @@ button
 
     width: 20px;
 
-    background-image: url('../img/h1-bg-before.png');
+    background-image: url('../assets/images/h1-bg-before.png');
     background-size: 100% 80%;
 }
 .heading_lvl-1::after,
@@ -998,7 +998,7 @@ button
 
     width: 30px;
 
-    background-image: url('../img/h1-bg-after.png');
+    background-image: url('../assets/images/h1-bg-after.png');
     background-size: 100% 93%;
 }
 
@@ -1440,7 +1440,6 @@ td,
 
 .field-round
 {
-    font-family: 'Toyota Display', 'Open Sans', 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-size: 15px;
     line-height: 20px;
 
@@ -1454,6 +1453,18 @@ td,
     background-color: #fff;
     -webkit-box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, .1);
             box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, .1);
+}
+.field-round::-webkit-input-placeholder
+{
+    color: #afafaf;
+}
+.field-round::-ms-input-placeholder
+{
+    color: #afafaf;
+}
+.field-round::placeholder
+{
+    color: #afafaf;
 }
 .field-round:hover,
 .field-round:focus
