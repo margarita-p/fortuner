@@ -7,8 +7,10 @@
   border-radius: get($border_radius, 'button', 'small');
   font-size: 15px;
   line-height: 20px;
-  font-family: $font_display;
   box-shadow: -1px 1px 4px 0 rgba(#000000, 0.1);
+  &::placeholder {
+    color: #afafaf;
+  }
   &:hover,
   &:focus {
     box-shadow: -1px 1px 10px 0 rgba(#000000, 0.15)
