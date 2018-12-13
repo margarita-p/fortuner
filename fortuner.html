@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="_assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="_assets/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#FFFFFF">
+  <title>Fortuner</title>
+  <link href="css/style.min.css" rel="stylesheet" />
+  <script src="js/lib.min.js"></script>
+</head>
+
+<body>
+  <div id="go-top"></div>
+  <div class="overlay"></div>
+  <div style="display: none;">
+    <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 426.7 426.7" id="location" xmlns="http://www.w3.org/2000/svg"><path d="M213.3 0C130.9 0 64 66.9 64 149.3c0 112 149.3 277.3 149.3 277.3s149.3-165.3 149.3-277.3C362.7 66.9 295.8 0 213.3 0zm0 202.7c-29.4 0-53.3-23.9-53.3-53.3S183.9 96 213.3 96s53.3 23.9 53.3 53.3-23.8 53.4-53.3 53.4z"/></symbol><symbol viewBox="0 0 20 20" id="test-drive" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10.7" r="1.6"/><path d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm0 1.6c3.6 0 6.6 2.2 7.8 5.4 0 .4-.1 1-.6 1.1-2 .8-3.7-.9-7.3-.9-3.7 0-5.3 1.7-7.3.9-.3-.1-.5-.4-.6-.7 1.1-3.3 4.3-5.8 8-5.8zm2.2 9.1c0 1.2-1 2.2-2.2 2.2s-2.2-1-2.2-2.2c0-1.2 1-2.2 2.2-2.2s2.2 1 2.2 2.2zm-8 4.6c-.3.1-.5 0-.8-.2-.9-1.2-1.5-2.7-1.7-4.3.2-.2.6-.3 1.1-.2 1.1.5 2.5 4.2 1.4 4.7zm8.8 2.5c-.1 0-.1.1-.1.1-.9.3-1.8.5-2.8.5-1.1 0-2.2-.2-3.2-.6-1.1-.8-.6-1.4-.1-2.4.6-1 3.1-.7 3.1-.7s2.6-.3 3.2.7c.5.9 1 1.6-.1 2.4zm4.1-3.3c-.4.5-.9 1.1-1.4.8-1.1-.5.3-4.2 1.4-4.6.6-.2 1 0 1.2.4-.2 1.2-.6 2.4-1.2 3.4z"/></symbol></svg>
+  </div>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__adaptive">
+        <button class="button-burger js-toggle-nav" aria-label="Открыть меню" type="button"><i class="button-burger__icon"><span></span></i></button>
+      </div>
+      <nav class="header__main-nav">
+        <ul class="main-nav">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Corolla</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Camry</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">RAV4</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Highlander</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Land Cruiser Prado</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Land Cruiser 200</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Hilux</a>
+          </li>
+          <li class="main-nav__item main-nav__item_active">Fortuner
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Prius</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="intro">
+    <div class="intro__image-group">
+      <div class="intro__wrapper">
+        <div class="intro__image-container intro__image-container_background">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/images/fortuner/fortuner-bg-desk.png" />
+            <img src="assets/images/fortuner/fortuner-bg-mob.png" alt=" " />
+          </picture>
+        </div>
+        <div class="intro__image-container intro__image-container_main">
+          <picture>
+            <source media="(min-width: 768px)" srcset="assets/images/fortuner/fortuner-desk.png" />
+            <img src="assets/images/fortuner/fortuner-mob.png" alt="Fortuner" />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="intro__header-group">
+      <div class="intro__wrapper">
+        <div class="intro__heading-container">
+          <h1 class="heading heading_lvl-1 intro__heading">Fortuner</h1>
+          <p class="intro__slogan">Ты настоящий</p>
+        </div>
+        <div class="sticker intro__sticker">
+          <div class="sticker__inner">Специальная цена от официального дилера</div>
+        </div>
+      </div>
+    </div>
+    <div class="intro__text-group">
+      <div class="intro__wrapper">
+        <ul class="intro__advantages-list">
+          <li class="advantages-item advantages-item_large intro__advantages-item">
+            <span class="advantages-item__label">Кредит в день от</span>
+            <span class="advantages-item__value">304 ₽<i class="sup">*</i></span>
+          </li>
+          <li class="advantages-item advantages-item_large intro__advantages-item">
+            <span class="advantages-item__label">Выгода до</span>
+            <span class="advantages-item__value">365 000 ₽<i class="sup">*</i></span>
+          </li>
+          <li class="advantages-item advantages-item_large intro__advantages-item">
+            <span class="advantages-item__label">Скидка по trade-in до</span>
+            <span class="advantages-item__value">150 000 ₽<i class="sup">*</i></span>
+          </li>
+          <li class="advantages-item advantages-item_large intro__advantages-item">
+            <span class="advantages-item__label">В подарок</span>
+            <span class="advantages-item__value">3 ТО</span>
+          </li>
+          <li class="advantages-item advantages-item_large advantages-item_wide intro__advantages-item">
+            <span class="advantages-item__label">В подарок</span>
+            <span class="advantages-item__value">зимние шины</span>
+          </li>
+        </ul>
+        <div class="intro__buttons-container">
+          <div class="intro__test-drive">
+            <a class="link link_primary link_icon link_icon-before link_large intro__test-drive" href="#">
+              <i class="link__icon">
+                <svg role="img" width="18" height="18">
+                  <use xlink:href="#test-drive"></use>
+                </svg>
+              </i>Записаться на Тест-драйв
+            </a>
+          </div>
+          <div class="intro__offer">
+            <div class="intro__offer-button">
+              <button class="button js-open-order" type="button">Получить предложение</button>
+            </div>
+            <div class="intro__offer-link">
+              <a class="link link_dotted-primary link_large" href="#">Нашли дешевле?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="features">
+    <div class="features__wrapper">
+      <ol class="features__list js-slick-features">
+        <li class="features-item features__item">
+          <h3 class="features-item__heading">
+              <span class="features-item__number">01</span>
+              Цена, как <br>для сотрудника
+            </h3>
+          <div class="features-item__text">
+            <p>Отдаем а/м по&nbsp;закрытому прайсу, как для сотрудника&nbsp;ДЦ.</p>
+            <p>Предложение ограничено. Спешите.</p>
+          </div>
+        </li>
+        <li class="features-item features__item">
+          <h3 class="features-item__heading">
+              <span class="features-item__number">02</span>
+              Улучшим <br>предложение
+            </h3>
+          <div class="features-item__text">
+            <p>Уже получили предложение по&nbsp;цене в&nbsp;другом салоне?</p>
+            <p>Не спешите,&nbsp;&mdash; Мы его улучшим!</p>
+          </div>
+        </li>
+        <li class="features-item features__item">
+          <h3 class="features-item__heading">
+              <span class="features-item__number">03</span>
+              Бронь а/м из <br>поставки
+            </h3>
+          <div class="features-item__text">
+            <p>Бронируйте лучшие а/м еще до&nbsp;поступления в&nbsp;салон.</p>
+            <p>Пока вы&nbsp;думаете&nbsp;&mdash; другие покупают.</p>
+          </div>
+        </li>
+        <li class="features-item features__item">
+          <h3 class="features-item__heading">
+              <span class="features-item__number">04</span>
+              Льготный <br>кредит
+            </h3>
+          <div class="features-item__text">
+            <p>Оформите кредит на&nbsp;выгодных условиях.</p>
+            <p>Низкие ставки. Нет скрытых платежей.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="content">
+    <div class="stock content__section js-stock">
+      <div class="stock__wrapper">
+        <h2 class="heading heading_lvl-2 heading_lvl-2-centred stock__heading">Автомобили в&#8197;наличии</h2>
+        <div class="stock__list stock__list_top">
+          <article class="models-item stock__item">
+            <div class="models-item__image-container">
+              <img class="models-item__image" src="assets/images/fortuner/models/models-fortuner.png" width="370" height="210" alt="Fortuner">
+            </div>
+            <div class="models-item__card">
+              <h3 class="models-item__heading">Fortuner</h3>
+              <div class="models-item__content">
+                <div class="models-item__column">
+                  <ul class="models-item__attributes-list">
+                    <li class="attributes-item models-item__attributes-item">Год выпуска: 2016</li>
+                    <li class="attributes-item models-item__attributes-item">Двигатель: 1,6 МТ (110 л.с.)</li>
+                    <li class="attributes-item models-item__attributes-item">КПП: Механическая</li>
+                    <li class="attributes-item models-item__attributes-item">Привод: Передний привод</li>
+                    <li class="attributes-item models-item__attributes-item">Цвет: Серый металлик</li>
+                  </ul>
+                </div>
+                <div class="models-item__column">
+                  <ul class="models-item__advantages-list">
+                    <li class="advantages-item advantages-item_medium models-item__advantages-item">
+                      <span class="advantages-item__label">Выгода до</span>
+                      <span class="advantages-item__value">100 500 ₽</span>
+                    </li>
+                    <li class="advantages-item advantages-item_medium models-item__advantages-item">
+                      <span class="advantages-item__label">в кредит от</span>
+                      <span class="advantages-item__value">5 000 ₽/мес</span>
+                    </li>
+                  </ul>
+                  <ul class="models-item__contacts-list">
+                    <li class="contacts-item contacts-item_with-link contacts-item_tel models-item__contacts-item">
+                      <span class="contacts-item__label">Подробнее:</span>
+                      <a class="contacts-item__value" href="tel:73512111010">+7 (351)211-10-10</a>
+                    </li>
+                  </ul>
+                  <a class="button button_wide models-item__button" href="#">Узнать цену</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <button class="stock__button-more js-button-stock" type="button">Смотреть ещё</button>
+        <div class="stock__list stock__list_more js-content-stock">
+          <article class="models-item stock__item">
+            <div class="models-item__image-container">
+              <img class="models-item__image" src="assets/images/fortuner/models/models-fortuner.png" width="370" height="210" alt="Fortuner">
+            </div>
+            <div class="models-item__card">
+              <h3 class="models-item__heading">Fortuner</h3>
+              <div class="models-item__content">
+                <div class="models-item__column">
+                  <ul class="models-item__attributes-list">
+                    <li class="attributes-item models-item__attributes-item">Год выпуска: 2016</li>
+                    <li class="attributes-item models-item__attributes-item">Двигатель: 1,6 МТ (110 л.с.)</li>
+                    <li class="attributes-item models-item__attributes-item">КПП: Механическая</li>
+                    <li class="attributes-item models-item__attributes-item">Привод: Передний привод</li>
+                    <li class="attributes-item models-item__attributes-item">Цвет: Серый металлик</li>
+                  </ul>
+                </div>
+                <div class="models-item__column">
+                  <ul class="models-item__advantages-list">
+                    <li class="advantages-item advantages-item_medium models-item__advantages-item">
+                      <span class="advantages-item__label">Выгода до</span>
+                      <span class="advantages-item__value">100 500 ₽</span>
+                    </li>
+                    <li class="advantages-item advantages-item_medium models-item__advantages-item">
+                      <span class="advantages-item__label">в кредит от</span>
+                      <span class="advantages-item__value">5 000 ₽/мес</span>
+                    </li>
+                  </ul>
+                  <ul class="models-item__contacts-list">
+                    <li class="contacts-item contacts-item_with-link contacts-item_tel models-item__contacts-item">
+                      <span class="contacts-item__label">Подробнее:</span>
+                      <a class="contacts-item__value" href="tel:73512111010">+7 (351)211-10-10</a>
+                    </li>
+                  </ul>
+                  <a class="button button_wide models-item__button" href="#">Узнать цену</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="models-item stock__item">
+            <div class="models-item__image-container">
+              <img class="models-item__image" src="assets/images/fortuner/models/models-fortuner.png" width="370" height="210" alt="Fortuner">
+            </div>
+            <div class="models-item__card">
+              <h3 class="models-item__heading">Fortuner</h3>
+              <div class="models-item__content">
+                <div class="models-item__column">
+                  <ul class="models-item__attributes-list">
+                    <li class="attributes-item models-item__attributes-item">Год выпуска: 2016</li>
+                    <li class="attributes-item models-item__attributes-item">Двигатель: 1,6 МТ (110 л.с.)</li>
+                    <li class="attributes-item models-item__attributes-item">КПП: Механическая</li>
+                    <li class="attributes-item models-item__attributes-item">Привод: Передний привод</li>
+                    <li class="attributes-item models-item__attributes-item">Цвет: Серый металлик</li>
+                  </ul>
+                </div>
+                <div class="models-item__column">
+                  <ul class="models-item__advantages-list">
+                    <li class="advantages-item advantages-item_medium models-item__advantages-item">
+                      <span class="advantages-item__label">Выгода до</span>
+                      <span class="advantages-item__value">100 500 ₽</span>
+                    </li>
+                    <li class="advantages-item advantages-item_medium models-item__advantages-item">
+                      <span class="advantages-item__label">в кредит от</span>
+                      <span class="advantages-item__value">5 000 ₽/мес</span>
+                    </li>
+                  </ul>
+                  <ul class="models-item__contacts-list">
+                    <li class="contacts-item contacts-item_with-link contacts-item_tel models-item__contacts-item">
+                      <span class="contacts-item__label">Подробнее:</span>
+                      <a class="contacts-item__value" href="tel:73512111010">+7 (351)211-10-10</a>
+                    </li>
+                  </ul>
+                  <a class="button button_wide models-item__button" href="#">Узнать цену</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="best-offer content__section">
+      <div class="best-offer__wrapper">
+        <h2 class="heading heading_lvl-2 heading_lvl-2-centred best-offer__heading">Уникальное предложение!</h2>
+        <p class="best-offer__text">Получите максимально выгодные условия на покупку <strong>Toyota</strong></p>
+        <form class="best-offer__form" action="/" method="post" accept-charset="UTF-8">
+          <div class="best-offer__field-group">
+            <input class="field-round best-offer__field" tabindex="0" placeholder="Введите номер телефона" name="tel" type="tel">
+            <button class="button best-offer__button" type="submit">Получить предложение</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="contacts">
+    <h2 class="heading heading_lvl-2 heading_lvl-2-centred contacts__heading">Контакты</h2>
+    <div class="contacts__content">
+      <div class="contacts__map js-map" id="map">
+        <!-- <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.499518599234!2d37.5486363870964!3d55.80192795036516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549c301042d39%3A0xce55ae62471a8f13!2zMS3RjyDRg9C7LiA4LdCz0L4g0JzQsNGA0YLQsCDRg9C7LiwgMywg0JzQvtGB0LrQstCwLCAxMjUxNjc!5e0!3m2!1sru!2sru!4v1544108068215"
+         width="800" height="600" allowfullscreen="allowfullscreen"></iframe> -->
+      </div>
+      <a class="button-top contacts__button-top js-button-top" title="Наверх" href="#go-top"></a>
+    </div>
+  </div>
+  <div class="footnote">
+    <div class="footnote__wrapper">
+      <div class="footnote__dropdown js-dropdown">
+        <h4 class="footnote__heading">
+            <button class="footnote__button-dropdown js-button-dropdown" type="button">Условия акции</button>
+          </h4>
+        <div class="text-dropdown text-dropdown_light footnote__text">
+          <p>*Предложение действует до&nbsp;31.03.18г.</p>
+          <p>Выгода достигается посредством предоставления скидки от&nbsp;максимальной цены перепродажи автомобиля при передаче автомобиля с&nbsp;пробегом в&nbsp;счет стоимости нового автомобиля, а&nbsp;также скидки при приобретении автомобиля по&nbsp;всем
+            кредитным программам от&nbsp;АО&nbsp;&laquo;Тойота Банк&raquo;, а&nbsp;так&nbsp;же одновременном страховании по&nbsp;договору КАСКО в&nbsp;рамках программы Тойота Страхование, организатором которой является ООО &laquo;Тойота Иншуранс Менеджмент
+            (Страховые брокеры)&raquo; (Лицензия ЦБ&nbsp;РФ&nbsp;СБ&#8470;&nbsp;4339) и&nbsp;скидки дилера зависящей от&nbsp;комплектации выбранной модели, подарками дополнительным оборудованием, или специальной ценой. Подробнее в&nbsp;дилерском центре
+            по&nbsp;тел. &mdash;&nbsp;+7(351)2111010&Prime;
+          </p>
+          <p>** Кредит&nbsp;5,5%: Ставка указана по&nbsp;кредитной программе &laquo;Выгодный (новые автомобили) 02_18&raquo; при первоначальном взносе (ПВ) от&nbsp;70% и&nbsp;сроке кредита (СК) 12&nbsp;мес. Условия кредитования: годовая процентная ставка
+            при&nbsp;ПВ от&nbsp;70% и&nbsp;СК&nbsp;12&nbsp;мес. &mdash;&nbsp;5,5% годовых, при&nbsp;СК от&nbsp;13&nbsp;до&nbsp;24&nbsp;мес. &mdash;&nbsp;7,5% годовых, при&nbsp;СК от&nbsp;25&nbsp;до&nbsp;36&nbsp;мес. &mdash;&nbsp;9,5% годовых; при&nbsp;ПВ
+            от&nbsp;40&nbsp;до&nbsp;69,9% и&nbsp;СК&nbsp;12&nbsp;мес. &mdash;&nbsp;5,5% годовых, при&nbsp;СК от&nbsp;13&nbsp;до&nbsp;24&nbsp;мес. &mdash;&nbsp;8,5% годовых, при&nbsp;СК от&nbsp;25&nbsp;до&nbsp;36&nbsp;мес. &mdash;&nbsp;9,9% годовых. Валюта
+            кредита&nbsp;&mdash; рубли РФ. Минимальная сумма кредита&nbsp;&mdash; 300&nbsp;000&nbsp;руб. Погашение аннуитетными (равными по&nbsp;сумме ежемесячными) платежами. Обязательная передача приобретаемого с&nbsp;использованием кредита а/м в&nbsp;залог
+            и&nbsp;страхование по&nbsp;программе КАСКО. Кредитование осуществляется АО&nbsp;&laquo;Тойота Банк&raquo; в&nbsp;регионах присутствия АО&nbsp;&laquo;Тойота Банк&raquo;. Лицензии Банка России &#8470;&nbsp;3470. Подробнее на&nbsp;сайте www.toyota-bank.ru
+            или по&nbsp;тел.&nbsp;8&nbsp;800&nbsp;200 08 40. Предложение действует с&nbsp;01.02.2018.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal">
+    <div class="modal__wrapper">
+      <button class="button-remove modal__close js-close-modal" aria-label="Закрыть окно" type="button"><i class="button-remove__icon"></i></button>
+      <h2 class="heading heading_lvl-2 heading_lvl-2-centred modal__heading">Заказать оценку автомобиля</h2>
+      <div class="modal__text">Заполните форму ниже, <br>чтобы заказать оценку вашего автомобиля</div>
+      <form class="modal__form" action="/" method="post" accept-charset="UTF-8">
+        <div class="modal__field-group">
+          <div class="field-form modal__field">
+            <input class="field-form__input" tabindex="0" placeholder="Имя" name="name" required="required" type="text">
+            <div class="tooltip tooltip_error field-form__tooltip">Заполните поле</div>
+          </div>
+        </div>
+        <div class="modal__field-group">
+          <div class="field-form modal__field">
+            <input class="field-form__input" tabindex="0" placeholder="Телефон" name="tel" required="required" type="tel">
+            <div class="tooltip tooltip_error field-form__tooltip">Заполните поле</div>
+          </div>
+        </div>
+        <div class="modal__field-group modal__field-group_auto">
+          <div class="field-form modal__field">
+            <input class="field-form__input" tabindex="0" placeholder="Автомобиль" name="auto" required="required" type="text">
+            <div class="tooltip tooltip_error field-form__tooltip">Заполните поле</div>
+          </div>
+          <div class="field-form modal__field">
+            <input class="field-form__input" tabindex="0" placeholder="Год" name="year" required="required" type="text">
+            <div class="tooltip tooltip_error field-form__tooltip">Заполните поле</div>
+          </div>
+        </div>
+        <button class="button modal__submit js-submit" type="button">Заказать оценку</button>
+        <label class="checkbox modal__checkbox">
+          <input class="checkbox__input hidden" type="checkbox">
+          <span class="checkbox__label">Я согласен с <a class="link link_gray" href="#">условиями обработки персональных данных</a></span>
+        </label>
+      </form>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__copyright">Официальный дилер Toyota &copy;&nbsp;2018</div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
