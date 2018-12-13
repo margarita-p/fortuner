@@ -1,0 +1,23 @@
+.content {
+  padding-top: 40px;
+}
+
+.content__wrapper {
+  @include wrapper;
+}
+
+.content__section {
+  margin-bottom: 40px;
+}
+
+@include respond-to(medium) {
+  .content__section {
+    margin-bottom: 60px;
+  }
+}
+
+@include respond-to(large) {
+  .content__section {
+    margin-bottom: 80px;
+  }
+}

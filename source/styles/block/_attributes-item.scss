@@ -1,0 +1,9 @@
+.attributes-item {
+  font-size: 16px;
+}
+
+@include respond-to(medium) {
+  .attributes-item {
+    font-size: 18px;
+  }
+}

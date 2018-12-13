@@ -1,0 +1,45 @@
+body,
+html {
+  width: 100%;
+  min-width: breakpoints(small);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: color(white);
+}
+
+body > * {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a, input, textarea, select, button {
+  display: inline-block;
+  font: inherit;
+  color: inherit;
+  text-transform: inherit;
+  transition: $button_transition
+}

@@ -1,0 +1,18 @@
+.footer {
+  padding: 20px 0;
+  background-color: color(gray);
+}
+
+.footer__wrapper {
+  @include wrapper;
+}
+
+.footer__copyright {
+  color: color(dark_gray);
+}
+
+@include respond_to(medium) {
+  .footer {
+    padding: 30px 0;
+  }
+}

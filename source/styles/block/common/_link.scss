@@ -1,0 +1,97 @@
+.link {
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-family: $font_display;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  &_primary {
+    color: color(primary);
+    &:active,
+    &:visited {
+      color: darken(color(primary), 10%);
+    }
+    .link__icon {
+      svg {
+        fill: color(primary);
+      }
+    }
+  }
+  &_gray {
+    color: color(dark_gray);
+    &:active,
+    &:visited {
+      color: darken(color(dark_gray), 10%);
+    }
+  }
+  &_dotted-primary {
+    position: relative;
+    line-height: 1;
+    text-decoration: none;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 0px;
+      border-top: 1px dotted color(primary);
+      opacity: 1;
+    }
+    @include hover {
+      &::after {
+        opacity: 0
+      }
+    }
+  }
+  &_icon {
+    display: inline-flex;
+    align-items: flex-start;
+    .link__icon {
+      width: 18px;
+      height: 18px;
+      transform: translateY(3px);
+    }
+  }
+  &_icon-before {
+    .link__icon {
+      margin-right: 10px;
+    }
+  }
+  &_large {
+    font-size: 15px;
+    .link__icon {
+      width: 22px;
+      height: 22px;
+      transform: translateY(0px);
+    }
+  }
+}
+
+.link__icon {
+  display: inline-block;
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    @include object-fit(contain, center);
+    fill: currentColor;
+  }
+}
+
+@include respond-to(medium_lg) {
+  .link {
+    &_large {
+      font-size: 16px;
+      .link__icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+      }
+    }
+  }
+}

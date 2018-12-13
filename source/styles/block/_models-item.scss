@@ -1,0 +1,131 @@
+.models-item__image-container {
+  width: 280px;
+  height: 160px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.models-item__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  @include object-fit(contain, center);
+}
+
+.models-item__card {
+  max-width: 700px;
+  background-color: color(light);
+  padding: 15px 20px;
+}
+
+.models-item__heading {
+  font-weight: 700;
+}
+
+.models-item__column {
+  margin-bottom: 16px;
+}
+
+.models-item__attributes-list {
+  @include list-none;
+}
+
+.models-item__attributes-item {
+  margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.models-item__advantages-list {
+  @include list-none;
+  margin-bottom: 16px;
+}
+
+.models-item__advantages-item {
+  margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.models-item__contacts-list {
+  @include list-none;
+  margin-bottom: 16px;
+}
+
+.models-item__contacts-item {
+  margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@include respond-to(small_lg) {
+  .models-item__card {
+    margin: 0 auto;
+  }
+  .models-item__content {
+    display: flex;
+  }
+  .models-item__column {
+    width: calc(50% - 10px);
+    max-width: 260px;
+    margin-right: auto;
+    margin-bottom: 0;
+    &:last-child {
+      margin-right: 0;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .models-item__advantages-item {
+    margin-bottom: auto;
+  }
+}
+
+@include respond-to(medium) {
+  .models-item__image-container {
+    width: 370px;
+    height: 210px;
+  }
+  .models-item__card {
+    padding: 24px;
+    padding-top: 15px;
+  }
+  .models-item__attributes-item {
+    margin-bottom: 10px;
+  }
+  .models-item__advantages-item {
+    margin-bottom: 10px;
+  }
+}
+
+@include respond-to(medium_lg) {
+  .models-item {
+    display: flex;
+    align-items: center;
+  }
+  .models-item__image-container {
+    margin: 0;
+    margin-right: 50px;
+  }
+  .models-item__card {
+    flex-shrink: 0;
+    flex-grow: 1;
+    min-width: 550px;
+    max-width: none;
+    margin: 0;
+  }
+}
+
+@include respond-to(large) {
+  .models-item__image-container {
+    margin-right: 70px;
+    width: 415px;
+  }
+  .models-item__card {
+    padding: 30px;
+    padding-top: 15px;
+  }
+}

@@ -1,0 +1,14 @@
+.textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #afafaf;
+  border-radius: get($border_radius, small);
+  font-size: 14px;
+  line-height: 20px;
+  resize: vertical;
+  &::placeholder {
+    color: #afafaf;
+  }
+}

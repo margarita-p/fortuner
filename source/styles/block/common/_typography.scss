@@ -1,0 +1,39 @@
+body,
+p {
+  font-family: $font_text;
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: normal;
+  font-weight: 400;
+  color: $color_text;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+@include headings-all {
+  margin-top: 0;
+  font-family: $font_display;
+  color: $color_heading;
+  font-style: normal;
+}
+
+@for $i from 1 through 6 {
+  h#{$i}, .heaing_lvl-#{$i} {
+    margin-bottom: get($heading_styles, 'small', 'h#{$i}', 'mb');
+    font-size: get($heading_styles, 'small', 'h#{$i}', 'fs');
+    line-height: get($heading_styles, 'small', 'h#{$i}', 'lh');
+    font-weight: get($heading_styles, 'small', 'h#{$i}', 'fw');
+  }
+}
+
+@include respond-to(medium) {
+  @for $i from 1 through 6 {
+    h#{$i}, .heaing_lvl-#{$i} {
+      margin-bottom: get($heading_styles, 'medium', 'h#{$i}', 'mb');
+      font-size: get($heading_styles, 'medium', 'h#{$i}', 'fs');
+    }
+  }
+}

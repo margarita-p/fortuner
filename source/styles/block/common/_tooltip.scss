@@ -1,0 +1,6 @@
+.tooltip {
+  font-size: 12px;
+  &_error {
+    color: color(error);
+  }
+}

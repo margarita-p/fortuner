@@ -1,0 +1,90 @@
+$btn_burger_width: 32px;
+$btn_burger_height: 32px;
+$btn_burger_distanse: 6px;
+$btn_burger_thickness: 3px;
+
+.button-burger {
+  width: $btn_burger_width;
+  height: $btn_burger_height;
+  padding: 4px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button-burger.open {
+  .button-burger__icon {
+    span {
+      background-color: transparent;
+      &::before {
+        animation-name: burger_before_open;
+      }
+      &::after {
+        animation-name: burger_after_open;
+      }
+    }
+  }
+}
+
+.button-burger__icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  span {
+    @include icon_burger($btn_burger_thickness, color(black), $btn_burger_distanse);
+    &::before {
+      animation-name: burger_before_close;
+    }
+    &::after {
+      animation-name: burger_after_close;
+    }
+  }
+}
+
+@keyframes burger_before_close {
+  0% {
+    transform: translateY($btn_burger_distanse) rotate(45deg);
+  }
+  50% {
+    transform: translateY($btn_burger_distanse / 2) rotate(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes burger_after_close {
+  0% {
+    transform: translateY(- $btn_burger_distanse) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(- $btn_burger_distanse / 2) rotate(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes burger_before_open {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY($btn_burger_distanse / 2);
+  }
+  100% {
+    transform: translateY($btn_burger_distanse) rotate(45deg);
+  }
+}
+
+@keyframes burger_after_open {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(- $btn_burger_distanse / 2);
+  }
+  100% {
+    transform: translateY(- $btn_burger_distanse) rotate(-45deg);
+  }
+}

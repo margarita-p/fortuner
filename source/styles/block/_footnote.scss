@@ -1,0 +1,50 @@
+.footnote {
+  padding: 20px 0;
+  padding-bottom: 40px;
+  background-color: color(light);
+}
+
+.footnote__wrapper {
+  @include wrapper;
+}
+
+.footnote__heading {
+  margin-bottom: 10px;
+}
+
+.footnote__button-dropdown {
+  position: relative;
+  padding-right: 24px;
+  margin-left: -6px;
+  background-color: transparent;
+  border: none;
+  font-family: $font_display;
+  font-size: 16px;
+  font-weight: 700;
+  color: color(primary);
+  text-decoration: none;
+  cursor: pointer;
+  @include icon-arrow (10px, 1px, color(primary), 135deg) {
+    right: 2px;
+    top: 6px;
+  }
+}
+
+.footnote__button-dropdown.open {
+  &::after {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+}
+
+@include respond-to(medium) {
+  .footnote__heading {
+    margin-bottom: 14px;
+  }
+  .footnote__button-dropdown {
+    font-size: 18px;
+  }
+}
+
+@include respond-to(large) {
+}

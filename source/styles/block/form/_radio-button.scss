@@ -1,0 +1,41 @@
+.radio-button {
+  display: block;
+}
+
+.radio-button__label {
+  display: block;
+  position: relative;
+  display: block;
+  padding-left: 24px;
+  transition: $input_transition;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    transition: $input_transition;
+  }
+  &::before {
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: color(white);
+    border: 1px solid color(primary);
+    border-radius: 50%;
+  }
+  &::after {
+    opacity: 0;
+    top: 6px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: color(primary);
+    border-radius: 50%;
+  }
+}
+
+.radio-button__input:checked ~ .radio-button__label {
+  &::after {
+    opacity: 1;
+  }
+}

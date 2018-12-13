@@ -1,0 +1,35 @@
+.button {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  background-color: color(primary);
+  border: none;
+  border-radius: get($border_radius, 'button', 'small');
+  font-family: $font_display;
+  font-size: 15px;
+  line-height: 20px;
+  color: color(white);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  @include hover {
+    background-color: darken(color(primary), 10%);
+    color: rgba(#ffffff, 0.7);
+  }
+  &:disabled,
+  &_disabled {
+    background-color: color(gray);
+    pointer-events:none;
+  }
+  &_wide {
+    width: 100%;
+  }
+}
+
+@include respond-to(medium) {
+  .button {
+    padding: 14px 24px;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: get($border_radius, 'button', 'medium_lg');
+  }
+}

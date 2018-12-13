@@ -1,0 +1,65 @@
+@mixin wrapper {
+  padding-left: pads(small);
+  padding-right: pads(small);
+  @include respond-to(small_lg) {
+    padding-left: pads(small_lg);
+    padding-right: pads(small_lg);
+  }
+  @include respond-to(medium) {
+    padding-left: pads(medium);
+    padding-right: pads(medium);
+  }
+  @include respond-to(medium_lg) {
+    padding-left: pads(medium_lg);
+    padding-right: pads(medium_lg);
+  }
+  @include respond-to(large) {
+    width: breakpoints(large);
+    margin: 0 auto;
+    padding-left: pads(large);
+    padding-right: pads(large);
+  }
+}
+
+@mixin wrapper-small-lg {
+  @include respond-to(small_lg) {
+    padding-left: pads(small_lg);
+    padding-right: pads(small_lg);
+  }
+  @include respond-to(medium) {
+    padding-left: pads(medium);
+    padding-right: pads(medium);
+  }
+  @include respond-to(medium_lg) {
+    padding-left: pads(medium_lg);
+    padding-right: pads(medium_lg);
+  }
+  @include respond-to(large) {
+    width: breakpoints(large);
+    margin: 0 auto;
+    padding-left: pads(large);
+    padding-right: pads(large);
+  }
+}
+
+@mixin wrapper-medium-lg {
+  @include respond-to(medium_lg) {
+    padding-left: pads(medium_lg);
+    padding-right: pads(medium_lg);
+  }
+  @include respond-to(large) {
+    width: breakpoints(large);
+    margin: 0 auto;
+    padding-left: pads(large);
+    padding-right: pads(large);
+  }
+}
+
+@mixin wrapper-large {
+  @include respond-to(large) {
+    width: breakpoints(large);
+    margin: 0 auto;
+    padding-left: pads(large);
+    padding-right: pads(large);
+  }
+}

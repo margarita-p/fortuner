@@ -1,0 +1,53 @@
+.contacts {
+
+}
+
+.contacts__wrapper {
+  @include wrapper;
+}
+
+.contacts__heading {
+  margin-bottom: 30px;
+}
+
+.contacts__content {
+  padding-bottom: 20px;
+  background-color: color(light);
+}
+
+.contacts__map {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.contacts__iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.contacts__button-top {
+  margin: 0 auto;
+}
+
+@include respond-to(medium) {
+  .contacts__heading {
+    margin-bottom: 40px;
+  }
+  .contacts__map {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+}
+
+@include respond-to(large) {
+  .contacts__heading {
+    margin-bottom: 60px;
+  }
+  .contacts__map {
+    height: 400px;
+    margin-bottom: 40px;
+  }
+}

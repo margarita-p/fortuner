@@ -1,0 +1,258 @@
+.intro {
+  padding-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: right 10px;
+  background-size: 50% auto;
+}
+
+.intro__wrapper {
+  @include wrapper;
+  height: 100%;
+}
+
+.intro__image-group {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  margin-bottom: 12px;
+  .intro__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.intro__header-group {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 30px;
+}
+
+.intro__image-container {
+  picture,
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &_background {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 90%;
+    picture,
+    img {
+      @include object-fit(contain, right);
+    }
+  }
+  &_main {
+    align-self: flex-end;
+    position: relative;
+    z-index: 1;
+    height: 60%;
+    picture,
+    img {
+      @include object-fit(contain, center);
+    }
+  }
+}
+
+.intro__heading-container {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.intro__advantages-list {
+  @include list-none;
+}
+
+.intro__advantages-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.intro__slogan {
+  margin: 0;
+  margin-top: -8px;
+  font-size: 20px;
+}
+
+.intro__sticker {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.intro__test-drive {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.intro__offer-button {
+  margin-bottom: 6px;
+  .button {
+    width: 100%;
+  }
+}
+
+.intro__offer-link {
+  text-align: right;
+  transform: translate(-3px);
+}
+
+@include respond-to(small_lg) {
+  .intro__image-group {
+    height: 280px;
+  }
+  .intro__header-group {
+    margin-bottom: 40px;
+    .intro__wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+  .intro__heading-container {
+    margin-bottom: 0;
+    margin-right: auto;
+    text-align: left;
+  }
+  .intro__sticker {
+    margin: 0;
+    margin-top: 15px;
+  }
+  .intro__advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-bottom: 40px;
+  }
+  .intro__advantages-item  {
+    width: calc(33.33% - 20px);
+    margin-left: 20px;
+    &_wide {
+      flex-grow: 1;
+    }
+  }
+  .intro__buttons-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .intro__test-drive {
+    margin-top: 5px;
+    margin-right: auto;
+    text-align: left;
+  }
+  .intro__offer-button {
+    .button {
+      min-width: 250px;
+    }
+  }
+}
+
+@include respond-to(medium) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .intro__image-group {
+    position: relative;
+    z-index: -1;
+    order: 2;
+    height: 400px;
+    margin-top: -130px;
+    margin-bottom: 20px;
+  }
+  .intro__header-group {
+    order: 1;
+  }
+  .intro__sticker {
+    width: 280px;
+    max-width: none;
+    margin-top: 20px;
+  }
+  .intro__text-group {
+    order: 3;
+  }
+  .intro__advantages-list {
+    margin-bottom: 10px;
+  }
+}
+
+@include respond-to(medium_lg) {
+  .intro {
+    min-height: 600px;
+    padding-top: 30px;
+  }
+  .intro__image-group {
+    height: 500px;
+    margin-top: -140px;
+    .intro__wrapper {
+      justify-content: flex-end;
+    }
+  }
+  .intro__image-container {
+    &_main {
+      img {
+        @include object-fit(contain, right);
+      }
+    }
+  }
+  .intro__slogan {
+    font-size: 24px;
+  }
+  .intro__text-group {
+    margin-top: -370px;
+  }
+  .intro__advantages-list {
+    width: 40%;
+    margin-bottom: 0;
+  }
+  .intro__advantages-item {
+    width: calc(50% - 20px);
+  }
+  .intro__buttons-container {
+    display: block;
+    width: 40%;
+  }
+  .intro__offer {
+    width: 250px;
+  }
+
+}
+
+@include respond-to(large) {
+  .intro {
+    min-height: 720px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  // .intro__header-group {
+  //   .intro__wrapper {
+  //     justify-content: flex-end;
+  //   }
+  // }
+  .intro__image-group {
+    height: 630px;
+    margin-top: -220px;
+  }
+  .intro__image-container {
+    &_background {
+      margin-right: 0;
+    }
+  }
+  .intro__text-group {
+    margin-top: -410px;
+  }
+  .intro__advantages-list {
+    width: 40%;
+  }
+  .intro__advantages-item {
+    margin-bottom: 35px;
+  }
+  .intro__offer-button {
+    margin-bottom: 10px;
+  }
+}

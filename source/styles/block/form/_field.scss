@@ -1,0 +1,26 @@
+.field-round {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: color(white);
+  border: none;
+  border-radius: get($border_radius, 'button', 'small');
+  font-size: 15px;
+  line-height: 20px;
+  font-family: $font_display;
+  box-shadow: -1px 1px 4px 0 rgba(#000000, 0.1);
+  &:hover,
+  &:focus {
+    box-shadow: -1px 1px 10px 0 rgba(#000000, 0.15)
+  }
+}
+
+@include respond-to(medium) {
+  .field-round {
+    padding: 14px 24px;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: get($border_radius, 'button', 'medium_lg');
+    font-size: 16px;
+  }
+}

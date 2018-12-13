@@ -1,0 +1,47 @@
+table,
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  &_desktop {
+    display: none;
+  }
+  &_mobile {
+    thead th {
+      text-align: center;
+    }
+  }
+}
+
+th,
+.table__th {
+  width: 2%;
+  padding: 10px;
+  text-align: left;
+  font-family: $font_display;
+  font-weight: 700;
+  font-size: 16px;
+  color: color(black);
+  border: 1px solid color(light_gray);
+}
+
+td,
+.table__td {
+  width: 2%;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid color(light_gray);
+}
+
+
+@include respond-to(medium) {
+  table,
+  .table {
+    &_desktop {
+      display: block;
+    }
+    &_mobile {
+      display: none;
+    }
+  }
+}

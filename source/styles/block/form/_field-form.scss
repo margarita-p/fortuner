@@ -1,0 +1,16 @@
+.field-form__input {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #afafaf;
+  border-radius: get($border_radius, small);
+  font-size: 14px;
+  line-height: 20px;
+  &::placeholder {
+    color: #afafaf;
+  }
+}
+
+.field-form__tooltip {
+  display: none;
+}

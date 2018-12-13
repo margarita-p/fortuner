@@ -1,0 +1,43 @@
+.button-top {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-color: color(primary);
+  border: none;
+  border-radius: get($border_radius, small);
+  box-shadow: $box_shadow_main;
+  text-decoration: none;
+  cursor: pointer;
+  @include icon_arrow (12px, 1px, color(white), -45deg) {
+    margin-top: 3px;
+    left: calc(50% - 6px);
+  }
+  @include hover {
+    background-color: darken(color(primary), 10%);
+  }
+}
+
+@include respond_to(medium) {
+  .button-top {
+    width: 42px;
+    height: 42px;
+    &::after {
+      width: 14px;
+      height: 14px;
+      left: calc(50% - 7px);
+    }
+  }
+}
+
+@include respond_to(large) {
+  .button-top {
+    width: 50px;
+    height: 50px;
+    &::after {
+      width: 16px;
+      height: 16px;
+      left: calc(50% - 8px);
+    }
+  }
+}
