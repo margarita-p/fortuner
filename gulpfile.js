@@ -61,11 +61,13 @@ gulp.task('script', function (cb) {
 gulp.task('lib', function (cb) {
   pump([
     gulp.src([
-      'node_modules/jquery/dist/jquery.min.js',
-      'node_modules/object-fit-images/dist/ofi.min.js',
-      'node_modules/slick-carousel/slick/slick.min.js',
-      'node_modules/picturefill/dist/picturefill.min.js',
+      'node_modules/jquery/dist/jquery.js',
+      'node_modules/object-fit-images/dist/ofi.js',
+      'node_modules/slick-carousel/slick/slick.js',
+      'node_modules/picturefill/dist/picturefill.js',
+      'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
     ]),
+    uglify(),
     concat('lib.min.js'),
     gulp.dest('build/js')
   ], cb);
