@@ -680,7 +680,7 @@ button
     text-decoration: none;
 
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
     background-color: #e50000;
     -webkit-box-shadow: 0 4px 26px 0 rgba(0, 0, 0, .1);
             box-shadow: 0 4px 26px 0 rgba(0, 0, 0, .1);
@@ -1496,7 +1496,7 @@ td,
     padding: 10px 20px;
 
     border: 1px solid #afafaf;
-    border-radius: 2px;
+    border-radius: 3px;
     background-color: transparent;
 }
 .field-form__input::-webkit-input-placeholder
@@ -1587,7 +1587,7 @@ td,
     resize: vertical; 
 
     border: 1px solid #afafaf;
-    border-radius: 2px;
+    border-radius: 3px;
     background-color: transparent;
 }
 .textarea::-webkit-input-placeholder
@@ -1657,6 +1657,19 @@ td,
 .radio-button__input:checked ~ .radio-button__label::after
 {
     opacity: 1;
+}
+
+.select
+{
+    font-size: 14px;
+    line-height: 20px; 
+
+    width: 100%;
+    padding: 10px 20px;
+
+    border: 1px solid #afafaf;
+    border-radius: 3px;
+    background-color: transparent;
 }
 
 .header

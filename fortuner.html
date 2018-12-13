@@ -9,8 +9,8 @@
   <meta name="msapplication-tap-highlight" content="no">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="_assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="_assets/favicon/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#FFFFFF">
   <title>Fortuner</title>
@@ -312,7 +312,7 @@
         <p class="best-offer__text">Получите максимально выгодные условия на покупку <strong>Toyota</strong></p>
         <form class="best-offer__form" action="/" method="post" accept-charset="UTF-8">
           <div class="best-offer__field-group">
-            <input class="field-round best-offer__field js-phone" tabindex="0" placeholder="Введите номер телефона" name="tel" type="tel">
+            <input class="field-round best-offer__field js-phone" tabindex="0" placeholder="Введите номер телефона" name="tel" type="tel" required>
             <button class="button best-offer__button" type="submit">Получить предложение</button>
           </div>
         </form>
@@ -358,20 +358,20 @@
       <form class="modal__form" action="/" method="post" accept-charset="UTF-8">
         <div class="modal__field-group">
           <div class="field-form modal__field">
-            <input class="field-form__input" tabindex="0" placeholder="Имя" name="name" required="required" type="text">
+            <input class="field-form__input" tabindex="0" placeholder="Имя" name="name" type="text" required>
           </div>
         </div>
         <div class="modal__field-group">
           <div class="field-form modal__field">
-            <input class="field-form__input js-phone" tabindex="0" placeholder="Телефон" name="tel" required="required" type="tel">
+            <input class="field-form__input js-phone" tabindex="0" placeholder="Телефон" name="tel" type="tel" required>
           </div>
         </div>
         <div class="modal__field-group modal__field-group_auto">
           <div class="field-form modal__field">
-            <input class="field-form__input" tabindex="0" placeholder="Автомобиль" name="auto" required="required" type="text">
+            <input class="field-form__input" tabindex="0" placeholder="Автомобиль" name="auto" type="text" required>
           </div>
           <div class="field-form modal__field">
-            <input class="field-form__input" tabindex="0" placeholder="Год" name="year" required="required" type="text">
+            <input class="field-form__input js-year" tabindex="0" placeholder="Год" name="year" type="text" required>
           </div>
         </div>
         <button class="button modal__submit js-submit" type="button">Заказать оценку</button>
