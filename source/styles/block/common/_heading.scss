@@ -3,7 +3,7 @@
   h1 {
     position: relative;
     display: inline-block;
-    background-image: url('../img/h1-bg.png');
+    background-image: url('../assets/images/h1-bg.png');
     background-repeat: round;
     background-position: left center;
     background-size: auto 100%;
@@ -23,14 +23,14 @@
       top: 0%;
       left: -20px;
       width: 20px;
-      background-image: url('../img/h1-bg-before.png');
+      background-image: url('../assets/images/h1-bg-before.png');
       background-size: 100% 80%;
     }
     &::after {
       top: 1%;
       right: -30px;
       width: 30px;
-      background-image: url('../img/h1-bg-after.png');
+      background-image: url('../assets/images/h1-bg-after.png');
       background-size: 100% 93%;
     }
   }

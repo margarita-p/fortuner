@@ -959,7 +959,7 @@ button
     padding-bottom: 20px; 
 
     color: #fff;
-    background-image: url('../img/h1-bg.png');
+    background-image: url('../assets/images/h1-bg.png');
     background-repeat: round;
     background-position: left center;
     background-clip: padding-box;
@@ -987,7 +987,7 @@ button
 
     width: 20px;
 
-    background-image: url('../img/h1-bg-before.png');
+    background-image: url('../assets/images/h1-bg-before.png');
     background-size: 100% 80%;
 }
 .heading_lvl-1::after,
@@ -998,7 +998,7 @@ button
 
     width: 30px;
 
-    background-image: url('../img/h1-bg-after.png');
+    background-image: url('../assets/images/h1-bg-after.png');
     background-size: 100% 93%;
 }
 
