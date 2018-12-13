@@ -17,10 +17,6 @@
   }
   @include hover {
     background-color: rgba(#FFFFFF, 0.9);
-    // &::after {
-    //   border-top-color: rgba(color(white), 0.5);
-    //   border-right-color: rgba(color(white), 0.5);
-    // }
   }
   &_prev {
     left: 20px;

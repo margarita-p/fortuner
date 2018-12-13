@@ -14,7 +14,7 @@
         balloonContent: 'Москва, 1-я улица 8 Марта, 3к2'
       }, {
         iconLayout: 'default#image',
-        iconImageHref: 'assets/images/pin-icon.png',
+        iconImageHref: 'assets/images/fortuner/pin-icon.png',
         iconImageSize: [80, 46],
         iconImageOffset: [-40, -46],
       });
