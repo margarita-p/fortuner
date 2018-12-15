@@ -1919,7 +1919,7 @@ td,
 .intro__header-group
 {
     position: relative;
-    z-index: 10;
+    z-index: 1;
 
     margin-bottom: 30px;
 }
